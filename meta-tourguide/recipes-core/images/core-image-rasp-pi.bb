@@ -4,6 +4,7 @@ DESCRIPTION = "${SUMMARY}"
 LICENSE="CLOSED"
 LIC_FILES_CHKSUM=""
 
+inherit core-image
 inherit ros_distro_${ROS_DISTRO}
 inherit ${ROS_DISTRO_TYPE}_image
 
@@ -110,14 +111,6 @@ IMAGE_INSTALL:append = " \
     byobu \
     python3-argcomplete \
     glibc-utils \
-    localedef \
-    rt-tests \
-    stress \
-    xrt-dev \
-    xrt \
-    zocl \
-    opencl-headers-dev \
-    opencl-clhpp-dev \
     ${ROS_SYSROOT_BUILD_DEPENDENCIES} \
 "
 
