@@ -107,8 +107,6 @@ IMAGE_INSTALL:append = " \
     demo-nodes-py \
     cyclonedds \
     rmw-cyclonedds-cpp \
-    tmux \
-    byobu \
     python3-argcomplete \
     glibc-utils \
     ${ROS_SYSROOT_BUILD_DEPENDENCIES} \
