@@ -13,3 +13,6 @@
 [submodule "subrepos/meta-arm"]
 	path = subrepos/meta-arm
 	url = git://git.yoctoproject.org/meta-arm
+[submodule "subrepos/meta-qt5"]
+	path = subrepos/meta-qt5
+	url = https://github.com/meta-qt5/meta-qt5.git

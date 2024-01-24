@@ -4,6 +4,8 @@ DESCRIPTION = "${SUMMARY}"
 LICENSE="CLOSED"
 LIC_FILES_CHKSUM=""
 
+IMAGE_FEATURES += " x11-base x11-sato"
+
 require ${COREBASE}/meta/recipes-core/images/core-image-minimal.bb
 
 inherit ros_distro_${ROS_DISTRO}
@@ -12,8 +14,10 @@ inherit ${ROS_DISTRO_TYPE}_image
 inherit extrausers
 
 IMAGE_INSTALL:append = " \
+    qtbase \
     ros-core \
     ros-base \
+    navigation2 \
 "
 
 PASSWD ="$5$2yZ6pkiYyBNLRwPQ$PWhYRHrHevygrxfscTaqYjuB4igYcOOXvzmV2krqhy."
