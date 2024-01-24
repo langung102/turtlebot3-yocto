@@ -1,20 +1,29 @@
-DESCRIPTION = "Image for tourguide robot project"
-HOMEPAGE = "https://www.yoctoproject.org/"
+SUMMARY = "Image for raspberry pi on Turtlebot3"
+DESCRIPTION = "${SUMMARY}"
 
-IMAGE_FEATURES += "splash package-management x11-base x11-sato ssh-server-dropbear hwcodecs"
+LICENSE="CLOSED"
+LIC_FILES_CHKSUM=""
 
+require ${COREBASE}/meta/recipes-core/images/core-image-minimal.bb
 
-LICENSE = "MIT"
+inherit ros_distro_${ROS_DISTRO}
+inherit ros_superflore_generated
+inherit ${ROS_DISTRO_TYPE}_image
+inherit extrausers
 
-inherit core-image
-
-TOOLCHAIN_HOST_TASK_append = " nativesdk-intltool nativesdk-glib-2.0"
-TOOLCHAIN_HOST_TASK_remove_task-populate-sdk-ext = " nativesdk-intltool nativesdk-glib-2.0"
-
-QB_MEM = '${@bb.utils.contains("DISTRO_FEATURES", "opengl", "-m 512", "-m 256", d)}'
-QB_MEM_qemuarmv5 = "-m 256"
-QB_MEM_qemumips = "-m 256"
-
-IMAGE_INSTALL_append_pn-core-image-bv-adas += " \
-  
+IMAGE_INSTALL:append = " \
+    ros-core \
+    ros-base \
+    turtlebot3-bringup \
+    turtlebot3-msgs \
+    turtlebot3-cartographer \
+    turtlebot3-description \
+    turtlebot3-node \
+    turtlebot3-teleop \
+    hls-lfcd-lds-driver\
+    urdf \
+    ld08-driver \
 "
+
+PASSWD ="$5$2yZ6pkiYyBNLRwPQ$PWhYRHrHevygrxfscTaqYjuB4igYcOOXvzmV2krqhy."
+EXTRA_USERS_PARAMS = "usermod -p '${PASSWD}' root;"

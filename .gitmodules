@@ -1,16 +1,16 @@
 [submodule "subrepos/poky"]
 	path = subrepos/poky
 	url = git://git.yoctoproject.org/poky.git
-	branch = honister
+	branch = kirkstone
 [submodule "subrepos/meta-raspberrypi"]
 	path = subrepos/meta-raspberrypi
 	url = git://git.yoctoproject.org/meta-raspberrypi.git
-	branch = honister
+	branch = kirkstone
 [submodule "subrepos/meta-openembedded"]
 	path = subrepos/meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
-	branch = honister
+	branch = kirkstone
 [submodule "subrepos/meta-ros"]
 	path = subrepos/meta-ros
 	url = https://github.com/ros/meta-ros.git
-	branch = honister
+	branch = kirkstone
