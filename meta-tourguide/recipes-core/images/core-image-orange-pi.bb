@@ -14,15 +14,6 @@ inherit extrausers
 IMAGE_INSTALL:append = " \
     ros-core \
     ros-base \
-    turtlebot3-bringup \
-    turtlebot3-msgs \
-    turtlebot3-cartographer \
-    turtlebot3-description \
-    turtlebot3-node \
-    turtlebot3-teleop \
-    hls-lfcd-lds-driver\
-    urdf \
-    ld08-driver \
 "
 
 PASSWD ="$5$2yZ6pkiYyBNLRwPQ$PWhYRHrHevygrxfscTaqYjuB4igYcOOXvzmV2krqhy."
