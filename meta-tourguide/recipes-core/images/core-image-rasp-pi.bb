@@ -1,4 +1,4 @@
-SUMMARY = "A image including a bare-minimum installation of ROS 2 and including some basic pub/sub examples. It includes two DDS middleware implementations, FastDDS and Cyclone DDS"
+SUMMARY = "Image for raspberry pi on Turtlebot3"
 DESCRIPTION = "${SUMMARY}"
 
 LICENSE="CLOSED"
