@@ -14,7 +14,7 @@ inherit ${ROS_DISTRO_TYPE}_image
 inherit extrausers
 
 IMAGE_INSTALL:append = " \
-    qtbase \
+    python3-numpy \
     ros-core \
     ros-base \
     navigation2 \
