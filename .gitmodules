@@ -1,23 +1,19 @@
 [submodule "subrepos/poky"]
 	path = subrepos/poky
 	url = git://git.yoctoproject.org/poky.git
-	branch = kirkstone
 [submodule "subrepos/meta-openembedded"]
 	path = subrepos/meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
-	branch = kirkstone
+	branch = nanbield
 [submodule "subrepos/meta-ros"]
 	path = subrepos/meta-ros
 	url = https://github.com/ros/meta-ros.git
-	branch = kirkstone
 [submodule "subrepos/meta-rockchip"]
 	path = subrepos/meta-rockchip
 	url = https://git.yoctoproject.org/meta-rockchip
 [submodule "subrepos/meta-arm"]
 	path = subrepos/meta-arm
 	url = git://git.yoctoproject.org/meta-arm
-	branch = kirkstone
 [submodule "subrepos/meta-qt5"]
 	path = subrepos/meta-qt5
 	url = https://github.com/meta-qt5/meta-qt5.git
-	branch = kirkstone
